@@ -1,1 +1,0 @@
-print("Meu nome e ADRIANO")
