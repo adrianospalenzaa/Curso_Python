@@ -4,19 +4,19 @@ informe se este número é par ou ímpar. Caso o usuário não digite um número
 inteiro, informe que não é um número inteiro.
 """
 
-# numero = input("Digite um número inteiro:\n ")
-#
-# try:  # tenta executar o código
-#     numero = int(numero)
-# except:  # caso ocorra algum erro, executa o código abaixo
-#     print(f'{numero} não e inteiro')
-#     exit(0)  # encerra o programa
-#
-# else:
-#     if numero % 2 == 0:
-#         print(f'o numero {numero} e par.')
-#     else:
-#         print(f'o numero {numero} e impar.')
+numero = input("Digite um número inteiro:\n ")
+
+try:  # tenta executar o código
+    numero = int(numero)
+except:  # caso ocorra algum erro, executa o código abaixo
+    print(f'{numero} não e inteiro')
+    exit(0)  # encerra o programa
+
+else:
+    if numero % 2 == 0:
+        print(f'o numero {numero} e par.')
+    else:
+        print(f'o numero {numero} e impar.')
 
 """
 Faça um programa que pergunte a hora ao usuário e, baseando-se no horário 
@@ -24,14 +24,14 @@ descrito, exiba a saudação apropriada. Ex.
 Bom dia 0-11, Boa tarde 12-17 e Boa noite 18-23.
 """
 
-# hora = int(input('Digite a hora.\n '))
-#
-# if hora in range(0, 12):
-#     print('Bom dia!')
-# elif hora in range(12, 18):
-#     print('Boa Tarde!')
-# elif hora in range(18, 24):
-#     print('Boa Noite!')
+hora = int(input('Digite a hora.\n '))
+
+if hora in range(0, 12):
+    print('Bom dia!')
+elif hora in range(12, 18):
+    print('Boa Tarde!')
+elif hora in range(18, 24):
+    print('Boa Noite!')
 
 
 """
