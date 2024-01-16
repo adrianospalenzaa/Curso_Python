@@ -1,12 +1,12 @@
 import random
-#nove_digitos = '116339657'
+
+nove_digitos = '304250074'
 
 # 1. Gerar os primeiros nove dígitos aleatórios
-nove_digitos = ''.join([str(random.randint(0, 9)) for _ in range(9)])
+#nove_digitos = ''.join([str(random.randint(0, 9)) for _ in range(9)])
 
 # Converte a string para uma lista de inteiros
 lista_numerica = [int(digito) for digito in nove_digitos]
-
 
 # Calcula o primeiro dígito verificador
 soma = 0
@@ -14,10 +14,9 @@ cont_regressivo = 10
 for i in range(9):
     soma += cont_regressivo * lista_numerica[i]
     cont_regressivo -= 1
-
+print(soma)
 resto = (soma * 10) % 11
 primeiro_digito = 0 if resto > 9 else resto
-
 
 # Calcula o segundo dígito verificador
 soma = 0
@@ -30,7 +29,6 @@ for i in range(10):
 
 resto = (soma * 10) % 11
 segundo_digito = 0 if resto > 9 else resto
-
 
 # Adiciona os dígitos verificadores à lista_numerica
 lista_numerica.extend([segundo_digito])
