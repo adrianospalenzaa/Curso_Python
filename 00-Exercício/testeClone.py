@@ -36,6 +36,7 @@ print('CPF Gerado: ', cpf_gerado)
 
 
 """
+
 Calculo do primeiro dígito do CPF
 CPF: 746.824.890-70
 Colete a soma dos 9 primeiros dígitos do CPF
